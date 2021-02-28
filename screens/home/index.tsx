@@ -29,8 +29,9 @@ const Home = () => {
       <Animated.ScrollView
         onScroll={onScroll}
         scrollEventThrottle={16}
+        decelerationRate='fast'
         snapToInterval={MAX_HEIGHT}
-      >
+>
         <Animated.View style={styles.container}>
           {items.map((item, index) => (
             <Item item={item} key={index} y={y} index={index} />
