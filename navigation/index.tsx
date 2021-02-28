@@ -14,6 +14,7 @@ import BookTableScreen from '../screens/bookTable';
 import SelectedItemScreen from '../screens/menu/selectedItemScreen';
 import Rainbow from '../screens/Rainbow';
 import Duolingo from '../screens/Duolingo'
+import Chanel from '../screens/Chanel'
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -36,8 +37,9 @@ function RootNavigator() {
 	const Drawer = createDrawerNavigator();
 	return (
 		<Drawer.Navigator screenOptions={{ headerShown: false }}>
-            {/* <Drawer.Screen name="Rainbow" component={Rainbow} /> */}
-            <Drawer.Screen name="Duolingo" component={Duolingo} />
+            {/* <Drawer.Screen name="Rainbow" component={Rainbow} /> 
+            <Drawer.Screen name="Duolingo" component={Duolingo} />*/}
+            <Drawer.Screen name="Chanel" component={Chanel} />
         {/* <Drawer.Screen name="LandingScreen" component={LandingScreen} />
 			<Drawer.Screen name="BookTableScreen" component={BookTableScreen} />
 			<Drawer.Screen name="SelectedItemScreen" component={SelectedItemScreen} />
